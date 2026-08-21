@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240" fill="none">
+  <defs>
+    <radialGradient id="crestGoldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd56b" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#9a6e27" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faecc9"/>
+      <stop offset="30%" stop-color="#d4af37"/>
+      <stop offset="70%" stop-color="#996515"/>
+      <stop offset="100%" stop-color="#e6be50"/>
+    </linearGradient>
+    <linearGradient id="gryffindorRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#540808"/>
+      <stop offset="100%" stop-color="#740001"/>
+    </linearGradient>
+    <linearGradient id="slytherinGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e381f"/>
+      <stop offset="100%" stop-color="#1a472a"/>
+    </linearGradient>
+    <linearGradient id="ravenclawBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1a38"/>
+      <stop offset="100%" stop-color="#0e1a40"/>
+    </linearGradient>
+    <linearGradient id="hufflepuffYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2010"/>
+      <stop offset="100%" stop-color="#3d2d14"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="100" cy="115" r="95" fill="url(#crestGoldGlow)"/>
+
+  <!-- Shield Outline Base -->
+  <path d="M100 15 C145 15 178 30 178 70 C178 145 140 195 100 215 C60 195 22 145 22 70 C22 30 55 15 100 15 Z" fill="#120e09" stroke="url(#goldGrad)" stroke-width="5"/>
+
+  <!-- Inner Quadrants -->
+  <!-- Top Left: Gryffindor -->
+  <path d="M100 23 C135 23 168 35 168 70 L100 70 Z" fill="url(#gryffindorRed)" opacity="0.9"/>
+  <!-- Top Right: Slytherin -->
+  <path d="M100 23 C65 23 32 35 32 70 L100 70 Z" fill="url(#slytherinGreen)" opacity="0.9"/>
+  <!-- Bottom Left: Ravenclaw -->
+  <path d="M100 70 L168 70 C168 135 138 185 100 203 Z" fill="url(#ravenclawBlue)" opacity="0.9"/>
+  <!-- Bottom Right: Hufflepuff -->
+  <path d="M100 70 L32 70 C32 135 62 185 100 203 Z" fill="url(#hufflepuffYellow)" opacity="0.9"/>
+
+  <!-- Quadrant Dividers -->
+  <line x1="100" y1="20" x2="100" y2="208" stroke="url(#goldGrad)" stroke-width="4"/>
+  <line x1="28" y1="70" x2="172" y2="70" stroke="url(#goldGrad)" stroke-width="4"/>
+
+  <!-- House Symbols Stylized Silhouettes -->
+  <!-- Lion (Gryffindor top left) -->
+  <path d="M60 38 C68 34 76 40 74 48 C72 56 64 62 55 58 C53 50 55 42 60 38 Z" fill="url(#goldGrad)" opacity="0.75"/>
+  <!-- Serpent (Slytherin top right) -->
+  <path d="M140 38 C145 42 148 48 143 54 C138 58 132 54 135 46 C138 40 144 38 140 38 Z" fill="url(#goldGrad)" opacity="0.75"/>
+  <!-- Badger (Hufflepuff bottom left) -->
+  <path d="M60 110 C68 112 72 120 68 128 C62 134 54 130 56 122 C58 116 62 110 60 110 Z" fill="url(#goldGrad)" opacity="0.75"/>
+  <!-- Eagle (Ravenclaw bottom right) -->
+  <path d="M140 110 C146 112 150 120 145 128 C138 134 132 128 134 120 C136 114 140 110 140 110 Z" fill="url(#goldGrad)" opacity="0.75"/>
+
+  <!-- Center Escutcheon Shield with 'H' -->
+  <path d="M100 50 C118 50 128 58 128 78 C128 108 114 125 100 134 C86 125 72 108 72 78 C72 58 82 50 100 50 Z" fill="#0d0905" stroke="url(#goldGrad)" stroke-width="3"/>
+  <text x="100" y="103" text-anchor="middle" font-family="'Cinzel Decorative', 'Georgia', serif" font-weight="bold" font-size="44" fill="url(#goldGrad)">H</text>
+
+  <!-- Crest Filigree Ribbon Header -->
+  <path d="M60 14 Q100 2 140 14 Q100 8 60 14 Z" fill="url(#goldGrad)"/>
+
+  <!-- Lower Motto Ribbon -->
+  <path d="M30 205 Q100 235 170 205 Q150 225 100 230 Q50 225 30 205 Z" fill="#18120b" stroke="url(#goldGrad)" stroke-width="2"/>
+  <text x="100" y="222" text-anchor="middle" font-family="'Cinzel', serif" font-size="8" font-weight="bold" fill="#d4af37" letter-spacing="1.5">DRACO DORMIENS NUNQUAM TITILLANDUS</text>
+</svg>
