@@ -1,0 +1,126 @@
+/* ==========================================================================
+   HARRY POTTER BIRTHDAY EXPERIENCE - CORE DESIGN SYSTEM & FOUNDATION
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=MedievalSharp&family=Pinyon+Script&display=swap');
+
+:root {
+  /* Dark Cinematic Atmosphere Tokens */
+  --color-void: #020305;
+  --color-abyss: #05070c;
+  --color-castle-shadow: #090c13;
+  --color-storm-slate: #131722;
+  --color-fog-gray: rgba(28, 36, 50, 0.45);
+  
+  /* Torch & Golden Amber Lighting Tokens */
+  --color-torch-core: #ffe8a3;
+  --color-torch-amber: #f5a623;
+  --color-torch-flame: #d96b14;
+  --color-torch-deep: #7a3106;
+  --color-torch-glow: rgba(245, 166, 35, 0.35);
+  --color-gold-spark: #ffd166;
+
+  /* Hogwarts Parchment & Antique Gold Accents */
+  --color-gold-light: #faecc9;
+  --color-gold-base: #d4af37;
+  --color-gold-dark: #8c6218;
+  --color-gold-glow: rgba(212, 175, 55, 0.4);
+
+  /* Authentic Hogwarts Ink Tokens (Dark Emerald-Sepia Ink) */
+  --color-ink-primary: #1c140d;
+  --color-ink-emerald: #14281d;
+  --color-ink-secondary: #3b2818;
+  --color-ink-faint: #694a2d;
+  --color-parchment-bg: #efe2be;
+  --color-parchment-border: #876033;
+
+  /* Lightning Tokens */
+  --color-lightning-flash: rgba(220, 235, 255, 0.85);
+
+  /* Typography */
+  --font-display: 'Cinzel Decorative', 'Georgia', serif;
+  --font-serif: 'Cinzel', 'Times New Roman', serif;
+  --font-letter-body: 'EB Garamond', 'Cormorant Garamond', 'Georgia', serif;
+  --font-parchment: 'Cormorant Garamond', 'Georgia', serif;
+  --font-calligraphy: 'Alex Brush', 'Pinyon Script', cursive;
+  --font-script: 'Pinyon Script', cursive;
+
+  /* Dimensions & Transitions */
+  --torch-radius: 340px;
+  --transition-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-magical: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--color-void);
+  color: var(--color-gold-light);
+  font-family: var(--font-serif);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Audio ambient toggle container */
+.ambient-controls {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ambient-btn {
+  background: rgba(11, 14, 21, 0.75);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: var(--color-gold-base);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6), 0 0 10px rgba(212, 175, 55, 0.15);
+  transition: all 0.3s var(--transition-smooth);
+}
+
+.ambient-btn:hover {
+  border-color: var(--color-gold-base);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), 0 0 18px rgba(245, 166, 35, 0.4);
+  transform: scale(1.06);
+}
+
+.ambient-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Screen Reader Only Utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

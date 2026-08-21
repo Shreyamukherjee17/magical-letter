@@ -1,0 +1,327 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN & ACCESSIBILITY OPTIMIZATIONS
+   ========================================================================== */
+
+/* Tablets & Smaller Laptops */
+@media (max-width: 900px) {
+  :root {
+    --torch-radius: 260px;
+  }
+
+  .hero-birthday-title {
+    font-size: clamp(1.4rem, 3.4vw, 2.1rem);
+    letter-spacing: 0.10em;
+    margin-bottom: 10px;
+  }
+
+  .hero-birthday-subtitle {
+    font-size: 0.76rem;
+    letter-spacing: 0.22em;
+    margin-bottom: 28px;
+  }
+
+  .btn-open-letter {
+    padding: 15px 36px;
+    font-size: 0.9rem;
+    letter-spacing: 0.22em;
+  }
+
+  .envelope-stage {
+    width: 380px;
+    height: 260px;
+  }
+
+  .envelope-paper-preview {
+    width: 340px;
+    height: 230px;
+  }
+
+  .envelope-flap-top {
+    border-left-width: 190px;
+    border-right-width: 190px;
+    border-top-width: 145px;
+  }
+
+  .envelope-pocket {
+    border-left-width: 190px;
+    border-right-width: 190px;
+    border-bottom-width: 135px;
+    border-top-width: 125px;
+  }
+
+  .envelope-seal {
+    width: 72px;
+    height: 72px;
+    top: 110px;
+  }
+
+  /* Responsive Parchment on Tablet */
+  .parchment-letter-wrapper {
+    max-width: 90vw;
+  }
+
+  .hogwarts-parchment-sheet {
+    max-width: 620px;
+    padding: 12px;
+  }
+
+  .parchment-inner-frame {
+    padding: 38px 32px 34px 32px;
+  }
+
+  .parchment-body {
+    font-size: 1.1rem;
+    line-height: 1.72;
+  }
+
+  .parchment-school-title {
+    font-size: 1.32rem;
+  }
+
+  .parchment-crest-wrapper {
+    width: 110px;
+  }
+
+  .parchment-crest-img {
+    width: 110px;
+  }
+
+  .parchment-wax-seal {
+    width: 95px;
+    height: auto;
+  }
+
+  .parchment-seal-img {
+    width: 95px;
+    height: auto;
+  }
+
+  .hero-crest-img {
+    width: 120px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  :root {
+    --torch-radius: 200px;
+  }
+
+  .hero-content {
+    padding: 0 16px;
+  }
+
+  .hero-crest-img {
+    width: 95px;
+  }
+
+  .hero-crest-container {
+    margin-bottom: 6px;
+  }
+
+  .hero-birthday-title {
+    font-size: 1.28rem;
+    letter-spacing: 0.08em;
+    line-height: 1.32;
+    padding: 0 6px;
+    margin-bottom: 8px;
+  }
+
+  .hero-birthday-subtitle {
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    margin-bottom: 24px;
+    padding: 0 8px;
+    line-height: 1.45;
+  }
+
+  .btn-open-letter {
+    padding: 14px 28px;
+    font-size: 0.82rem;
+    letter-spacing: 0.18em;
+  }
+
+  .ambient-controls {
+    bottom: 16px;
+    right: 16px;
+  }
+
+  /* 3D Envelope Mobile */
+  .envelope-stage {
+    width: 300px;
+    height: 210px;
+  }
+
+  .envelope-paper-preview {
+    width: 270px;
+    height: 180px;
+  }
+
+  .envelope-flap-top {
+    border-left-width: 150px;
+    border-right-width: 150px;
+    border-top-width: 115px;
+  }
+
+  .envelope-pocket {
+    border-left-width: 150px;
+    border-right-width: 150px;
+    border-bottom-width: 105px;
+    border-top-width: 105px;
+  }
+
+  .envelope-seal {
+    width: 60px;
+    height: 60px;
+    top: 90px;
+  }
+
+  /* Responsive Parchment on Mobile */
+  .parchment-letter-wrapper {
+    max-width: 96vw;
+    padding: 0;
+  }
+
+  .parchment-letter-scroll-area {
+    padding: 14px 6px 48px 6px;
+  }
+
+  .hogwarts-parchment-sheet {
+    max-width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+  }
+
+  .parchment-inner-frame {
+    padding: 28px 18px 24px 18px;
+    outline-offset: -5px;
+  }
+
+  .parchment-corner {
+    width: 16px;
+    height: 16px;
+  }
+
+  .parchment-corner.top-left { top: 12px; left: 12px; }
+  .parchment-corner.top-right { top: 12px; right: 12px; }
+  .parchment-corner.bottom-left { bottom: 12px; left: 12px; }
+  .parchment-corner.bottom-right { bottom: 12px; right: 12px; }
+
+  .parchment-crest-wrapper {
+    width: 95px;
+    margin-bottom: 12px;
+  }
+
+  .parchment-crest-img {
+    width: 95px;
+  }
+
+  .parchment-school-title {
+    font-size: 1.12rem;
+    letter-spacing: 0.12em;
+  }
+
+  .parchment-school-subtitle {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+  }
+
+  .parchment-header-tagline {
+    font-size: 0.94rem;
+    margin-bottom: 14px;
+  }
+
+  .parchment-body {
+    font-size: 1.05rem;
+    line-height: 1.68;
+  }
+
+  .parchment-body p {
+    margin-bottom: 1.15em;
+  }
+
+  .letter-salutation {
+    font-size: 1.15rem;
+  }
+
+  .letter-special-calligraphy {
+    font-size: 1.18rem;
+    line-height: 1.55;
+    margin-top: 1.15em !important;
+    margin-bottom: 1.15em !important;
+  }
+
+  .letter-special-calligraphy-inline {
+    font-size: 1.12rem;
+  }
+
+  .letter-list-item {
+    margin-bottom: 0.38em !important;
+  }
+
+  .parchment-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding-top: 18px;
+    margin-top: 26px;
+  }
+
+  .parchment-signature-block {
+    padding-right: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .parchment-signature-block p {
+    text-align: center !important;
+  }
+
+  .letter-valediction {
+    font-size: 1.12rem;
+  }
+
+  .letter-signature-name {
+    font-size: 1.25rem;
+  }
+
+  .letter-postscript {
+    font-size: 0.94rem;
+  }
+
+  .parchment-wax-seal {
+    width: 90px;
+    height: auto;
+    margin: 6px auto 0 auto;
+    transform: rotate(-3deg);
+  }
+
+  .parchment-seal-img {
+    width: 90px;
+    height: auto;
+  }
+
+  .btn-close-letter {
+    padding: 11px 24px;
+    font-size: 0.75rem;
+    letter-spacing: 0.16em;
+  }
+}
+
+/* Accessibility: Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .fog-layer-1, .fog-layer-2, .candlelight-flicker, .hogwarts-parchment-sheet {
+    animation: none;
+  }
+
+  .castle-backdrop {
+    transition: none;
+  }
+}
