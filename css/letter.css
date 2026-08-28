@@ -131,14 +131,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE and Edge */
 }
 
-.parchment-letter-scroll-area::-webkit-scrollbar {
-  display: none;
-  width: 0;
-  height: 0;
+.parchment-letter-scroll-area::-webkit-scrollbar,
+.parchment-letter-scroll-area::-webkit-scrollbar-thumb,
+.parchment-letter-scroll-area::-webkit-scrollbar-track,
+.parchment-letter-scroll-area::-webkit-scrollbar-corner {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
 }
 
 /* --------------------------------------------------------------------------

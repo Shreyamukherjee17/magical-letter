@@ -184,6 +184,8 @@
 
   .parchment-letter-scroll-area {
     padding: 14px 6px 48px 6px;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
   }
 
   .hogwarts-parchment-sheet {
